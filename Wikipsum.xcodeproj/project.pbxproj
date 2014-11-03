@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5E9AEDB1A080E8400F0FBD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E9AEDA1A080E8400F0FBD1 /* AppDelegate.swift */; };
+		A5E9AEDD1A080E8400F0FBD1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5E9AEDC1A080E8400F0FBD1 /* Images.xcassets */; };
+		A5E9AEE01A080E8400F0FBD1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5E9AEDE1A080E8400F0FBD1 /* MainMenu.xib */; };
+		A5E9AEEC1A080E8400F0FBD1 /* WikipsumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E9AEEB1A080E8400F0FBD1 /* WikipsumTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5E9AEE61A080E8400F0FBD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5E9AECD1A080E8400F0FBD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5E9AED41A080E8400F0FBD1;
+			remoteInfo = Wikipsum;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A5E9AED51A080E8400F0FBD1 /* Wikipsum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wikipsum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5E9AED91A080E8400F0FBD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5E9AEDA1A080E8400F0FBD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5E9AEDC1A080E8400F0FBD1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A5E9AEDF1A080E8400F0FBD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A5E9AEE51A080E8400F0FBD1 /* WikipsumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikipsumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5E9AEEA1A080E8400F0FBD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5E9AEEB1A080E8400F0FBD1 /* WikipsumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipsumTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5E9AED21A080E8400F0FBD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E9AEE21A080E8400F0FBD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5E9AECC1A080E8400F0FBD1 = {
+			isa = PBXGroup;
+			children = (
+				A5E9AED71A080E8400F0FBD1 /* Wikipsum */,
+				A5E9AEE81A080E8400F0FBD1 /* WikipsumTests */,
+				A5E9AED61A080E8400F0FBD1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5E9AED61A080E8400F0FBD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5E9AED51A080E8400F0FBD1 /* Wikipsum.app */,
+				A5E9AEE51A080E8400F0FBD1 /* WikipsumTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5E9AED71A080E8400F0FBD1 /* Wikipsum */ = {
+			isa = PBXGroup;
+			children = (
+				A5E9AEDA1A080E8400F0FBD1 /* AppDelegate.swift */,
+				A5E9AEDC1A080E8400F0FBD1 /* Images.xcassets */,
+				A5E9AEDE1A080E8400F0FBD1 /* MainMenu.xib */,
+				A5E9AED81A080E8400F0FBD1 /* Supporting Files */,
+			);
+			path = Wikipsum;
+			sourceTree = "<group>";
+		};
+		A5E9AED81A080E8400F0FBD1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5E9AED91A080E8400F0FBD1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5E9AEE81A080E8400F0FBD1 /* WikipsumTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5E9AEEB1A080E8400F0FBD1 /* WikipsumTests.swift */,
+				A5E9AEE91A080E8400F0FBD1 /* Supporting Files */,
+			);
+			path = WikipsumTests;
+			sourceTree = "<group>";
+		};
+		A5E9AEE91A080E8400F0FBD1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5E9AEEA1A080E8400F0FBD1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5E9AED41A080E8400F0FBD1 /* Wikipsum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5E9AEEF1A080E8400F0FBD1 /* Build configuration list for PBXNativeTarget "Wikipsum" */;
+			buildPhases = (
+				A5E9AED11A080E8400F0FBD1 /* Sources */,
+				A5E9AED21A080E8400F0FBD1 /* Frameworks */,
+				A5E9AED31A080E8400F0FBD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wikipsum;
+			productName = Wikipsum;
+			productReference = A5E9AED51A080E8400F0FBD1 /* Wikipsum.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5E9AEE41A080E8400F0FBD1 /* WikipsumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5E9AEF21A080E8400F0FBD1 /* Build configuration list for PBXNativeTarget "WikipsumTests" */;
+			buildPhases = (
+				A5E9AEE11A080E8400F0FBD1 /* Sources */,
+				A5E9AEE21A080E8400F0FBD1 /* Frameworks */,
+				A5E9AEE31A080E8400F0FBD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5E9AEE71A080E8400F0FBD1 /* PBXTargetDependency */,
+			);
+			name = WikipsumTests;
+			productName = WikipsumTests;
+			productReference = A5E9AEE51A080E8400F0FBD1 /* WikipsumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5E9AECD1A080E8400F0FBD1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Ambroise Maupate";
+				TargetAttributes = {
+					A5E9AED41A080E8400F0FBD1 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					A5E9AEE41A080E8400F0FBD1 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = A5E9AED41A080E8400F0FBD1;
+					};
+				};
+			};
+			buildConfigurationList = A5E9AED01A080E8400F0FBD1 /* Build configuration list for PBXProject "Wikipsum" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5E9AECC1A080E8400F0FBD1;
+			productRefGroup = A5E9AED61A080E8400F0FBD1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5E9AED41A080E8400F0FBD1 /* Wikipsum */,
+				A5E9AEE41A080E8400F0FBD1 /* WikipsumTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5E9AED31A080E8400F0FBD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E9AEDD1A080E8400F0FBD1 /* Images.xcassets in Resources */,
+				A5E9AEE01A080E8400F0FBD1 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E9AEE31A080E8400F0FBD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5E9AED11A080E8400F0FBD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E9AEDB1A080E8400F0FBD1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E9AEE11A080E8400F0FBD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E9AEEC1A080E8400F0FBD1 /* WikipsumTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5E9AEE71A080E8400F0FBD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5E9AED41A080E8400F0FBD1 /* Wikipsum */;
+			targetProxy = A5E9AEE61A080E8400F0FBD1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5E9AEDE1A080E8400F0FBD1 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5E9AEDF1A080E8400F0FBD1 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5E9AEED1A080E8400F0FBD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5E9AEEE1A080E8400F0FBD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A5E9AEF01A080E8400F0FBD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Wikipsum/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A5E9AEF11A080E8400F0FBD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Wikipsum/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A5E9AEF31A080E8400F0FBD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WikipsumTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wikipsum.app/Contents/MacOS/Wikipsum";
+			};
+			name = Debug;
+		};
+		A5E9AEF41A080E8400F0FBD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WikipsumTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wikipsum.app/Contents/MacOS/Wikipsum";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5E9AED01A080E8400F0FBD1 /* Build configuration list for PBXProject "Wikipsum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E9AEED1A080E8400F0FBD1 /* Debug */,
+				A5E9AEEE1A080E8400F0FBD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5E9AEEF1A080E8400F0FBD1 /* Build configuration list for PBXNativeTarget "Wikipsum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E9AEF01A080E8400F0FBD1 /* Debug */,
+				A5E9AEF11A080E8400F0FBD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A5E9AEF21A080E8400F0FBD1 /* Build configuration list for PBXNativeTarget "WikipsumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E9AEF31A080E8400F0FBD1 /* Debug */,
+				A5E9AEF41A080E8400F0FBD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5E9AECD1A080E8400F0FBD1 /* Project object */;
+}
