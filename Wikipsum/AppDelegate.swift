@@ -68,6 +68,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
     
+    @IBAction func copyTitle(sender: AnyObject) {
+        var pasteBoard = NSPasteboard.generalPasteboard()
+        pasteBoard.clearContents()
+        pasteBoard.writeObjects([self.titleContent.stringValue])
+    }
+    
+    @IBAction func copyExtract(sender: AnyObject) {
+        var pasteBoard = NSPasteboard.generalPasteboard()
+        pasteBoard.clearContents()
+        pasteBoard.writeObjects([self.extractContent.string! as String])
+    }
     func html2markdown(content: NSString) -> String {
         
         var newContent = content
@@ -105,8 +116,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         newContent = self.replace(
             newContent,
-            replacement: "* $1",
-            pattern: "<li>([.]+)</li>")
+            replacement: "* ",
+            pattern: "<li>")
+        newContent = self.replace(
+            newContent,
+            replacement: "",
+            pattern: "</li>")
         newContent = self.replace(
             newContent,
             replacement: "\n",
@@ -115,6 +130,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             newContent,
             replacement: "",
             pattern: "<ul[^>]*>")
+        
+        
         
         return newContent as String
     }

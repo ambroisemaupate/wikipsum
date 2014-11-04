@@ -674,13 +674,16 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
             <view key="contentView" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Udc-QD-LxK">
+                    <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Udc-QD-LxK">
                         <rect key="frame" x="14" y="312" width="318" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="300" id="W7w-P2-xm0"/>
+                        </constraints>
                         <buttonCell key="cell" type="push" title="Wikipsum!" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="KGK-CH-aJh">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -689,15 +692,15 @@
                             </connections>
                         </buttonCell>
                     </button>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B2b-6I-tM6">
-                        <rect key="frame" x="20" y="245" width="440" height="52"/>
+                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B2b-6I-tM6">
+                        <rect key="frame" x="20" y="276" width="333" height="21"/>
                         <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="NjN-mL-Log">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ozt-a4-ab4">
+                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ozt-a4-ab4">
                         <rect key="frame" x="334" y="318" width="126" height="22"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Character count" drawsBackground="YES" id="wvc-bT-lqg">
                             <font key="font" metaFont="system"/>
@@ -705,20 +708,47 @@
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCm-V2-rkb">
-                        <rect key="frame" x="20" y="20" width="440" height="217"/>
-                        <clipView key="contentView" ambiguous="YES" misplaced="YES" id="ZDK-dQ-fEe">
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pBy-Ks-EQZ">
+                        <rect key="frame" x="355" y="269" width="111" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="99" id="YQU-lz-gX7"/>
+                        </constraints>
+                        <buttonCell key="cell" type="push" title="Copy" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Boh-Ly-AEr">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="copyTitle:" target="Voe-Tx-rLC" id="Et1-4h-Egr"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="G4t-L2-WNe">
+                        <rect key="frame" x="355" y="13" width="111" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="99" id="fYh-Dk-0Dw"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="99" id="lBR-DF-pBs"/>
+                        </constraints>
+                        <buttonCell key="cell" type="push" title="Copy" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="on0-KS-WCK">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="copyExtract:" target="Voe-Tx-rLC" id="RTb-Jf-gyc"/>
+                        </connections>
+                    </button>
+                    <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCm-V2-rkb">
+                        <rect key="frame" x="20" y="20" width="333" height="248"/>
+                        <clipView key="contentView" id="ZDK-dQ-fEe">
                             <rect key="frame" x="1" y="1" width="223" height="133"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <textView ambiguous="YES" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="l2A-69-hBO">
-                                    <rect key="frame" x="0.0" y="0.0" width="223" height="133"/>
+                                <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="l2A-69-hBO">
+                                    <rect key="frame" x="0.0" y="0.0" width="223" height="215"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <size key="minSize" width="438" height="215"/>
+                                    <size key="minSize" width="316" height="246"/>
                                     <size key="maxSize" width="463" height="10000000"/>
                                     <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <size key="minSize" width="438" height="215"/>
+                                    <size key="minSize" width="316" height="246"/>
                                     <size key="maxSize" width="463" height="10000000"/>
                                 </textView>
                             </subviews>
@@ -734,6 +764,25 @@
                         </scroller>
                     </scrollView>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Ozt-a4-ab4" secondAttribute="trailing" constant="20" id="3br-Uj-HlT"/>
+                    <constraint firstItem="Udc-QD-LxK" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="5Sw-yT-Ojf"/>
+                    <constraint firstItem="DCm-V2-rkb" firstAttribute="top" secondItem="pBy-Ks-EQZ" secondAttribute="bottom" constant="8" id="L8a-Au-UoZ"/>
+                    <constraint firstItem="Ozt-a4-ab4" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" id="LU4-BT-hKg"/>
+                    <constraint firstItem="Udc-QD-LxK" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" id="N3B-hH-mlD"/>
+                    <constraint firstItem="DCm-V2-rkb" firstAttribute="top" secondItem="B2b-6I-tM6" secondAttribute="bottom" constant="8" id="NVE-dq-E1a"/>
+                    <constraint firstItem="pBy-Ks-EQZ" firstAttribute="leading" secondItem="B2b-6I-tM6" secondAttribute="trailing" constant="8" id="Nce-yc-mOB"/>
+                    <constraint firstItem="G4t-L2-WNe" firstAttribute="leading" secondItem="DCm-V2-rkb" secondAttribute="trailing" constant="8" id="gx4-bO-IG2"/>
+                    <constraint firstAttribute="trailing" secondItem="pBy-Ks-EQZ" secondAttribute="trailing" constant="20" id="h3O-Ad-yZs"/>
+                    <constraint firstItem="B2b-6I-tM6" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="iUW-iw-rVY"/>
+                    <constraint firstAttribute="bottom" secondItem="DCm-V2-rkb" secondAttribute="bottom" constant="20" id="izU-AL-GsX"/>
+                    <constraint firstItem="B2b-6I-tM6" firstAttribute="top" secondItem="Ozt-a4-ab4" secondAttribute="bottom" constant="20" id="kPR-7p-9Eg"/>
+                    <constraint firstAttribute="trailing" secondItem="G4t-L2-WNe" secondAttribute="trailing" constant="20" id="lyv-ki-CyQ"/>
+                    <constraint firstItem="Ozt-a4-ab4" firstAttribute="leading" secondItem="Udc-QD-LxK" secondAttribute="trailing" constant="8" id="snu-vx-vw2"/>
+                    <constraint firstAttribute="bottom" secondItem="G4t-L2-WNe" secondAttribute="bottom" constant="20" id="t4v-nA-Khf"/>
+                    <constraint firstItem="pBy-Ks-EQZ" firstAttribute="top" secondItem="Ozt-a4-ab4" secondAttribute="bottom" constant="21" id="uI3-S5-sci"/>
+                    <constraint firstItem="DCm-V2-rkb" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="wtu-hy-YB0"/>
+                </constraints>
             </view>
             <point key="canvasLocation" x="-75" y="413"/>
         </window>
