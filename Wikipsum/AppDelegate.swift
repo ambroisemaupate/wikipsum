@@ -30,7 +30,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         self.wikipsumButton.enabled = false;
         
-        var apiPath = "http://fr.wikipedia.org/w/api.php?action=query&generator=random&grnnamespace=0&prop=extracts&exchars=500&format=json";
+        var apiPath = "http://fr.wikipedia.org/w/api.php?action=query&generator=random&grnnamespace=0&prop=extracts&format=json";
         
         if (self.characterCount.integerValue > 0) {
             apiPath = "http://fr.wikipedia.org/w/api.php?action=query&generator=random&grnnamespace=0&prop=extracts&exchars="+self.characterCount.stringValue+"&format=json";
