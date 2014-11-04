@@ -20,9 +20,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
-        
-        var error: NSError;
-        //var object = NSJSONSerialization.JSONObjectWithData(returnedData, 0, &error);
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
@@ -46,7 +43,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             
             if (nil != data) {
                 var error: NSError?;
-                var boardsDictionary: NSDictionary = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers, error: &error) as NSDictionary
+                var boardsDictionary = NSJSONSerialization.JSONObjectWithData(
+                    data!,
+                    options: NSJSONReadingOptions.MutableContainers,
+                    error: &error) as NSDictionary
                 
                 //println(boardsDictionary);
                 var query = boardsDictionary.objectForKey("query") as NSDictionary
@@ -55,8 +55,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 for (key, value) in pages {
                     
                     var page = pages.objectForKey(key) as NSDictionary
-                    //println(page.valueForKey("title"))
-                    //println(page.valueForKey("extract"))
                     
                     self.titleContent.stringValue = page.valueForKey("title") as String;
                     
