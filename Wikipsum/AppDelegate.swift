@@ -16,6 +16,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var wikipsumButton: NSButtonCell!
     @IBOutlet weak var titleContent: NSTextField!
     @IBOutlet weak var characterCount: NSTextField!
+    @IBOutlet weak var langChooser: NSPopUpButton!
     @IBOutlet var extractContent: NSTextView!
     
     func applicationDidFinishLaunching(aNotification: NSNotification) {
@@ -30,11 +31,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         self.wikipsumButton.enabled = false;
         
-        var apiPath = "http://fr.wikipedia.org/w/api.php?action=query&generator=random&grnnamespace=0&prop=extracts&format=json";
+        var idx = self.langChooser.indexOfSelectedItem as Int
+        var lang = self.langChooser.itemTitleAtIndex(idx)
+        
+        var apiPath = "http://\(lang).wikipedia.org/w/api.php?action=query&generator=random&grnnamespace=0&prop=extracts&format=json";
         
         if (self.characterCount.integerValue > 0) {
-            apiPath = "http://fr.wikipedia.org/w/api.php?action=query&generator=random&grnnamespace=0&prop=extracts&exchars="+self.characterCount.stringValue+"&format=json";
+            apiPath = "http://\(lang).wikipedia.org/w/api.php?action=query&generator=random&grnnamespace=0&prop=extracts&exchars="+self.characterCount.stringValue+"&format=json";
         }
+        
+        
         
         var url = NSURL(string: apiPath);
         var request = NSURLRequest(URL: url!);
