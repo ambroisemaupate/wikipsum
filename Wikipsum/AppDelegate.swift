@@ -120,6 +120,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         newContent = self.replace(
             newContent,
+            replacement: "##### $1",
+            pattern: "<h5>([^\n]+)</h5>")
+        
+        newContent = self.replace(
+            newContent,
+            replacement: "###### $1",
+            pattern: "<h6>([^\n]+)</h6>")
+        
+        newContent = self.replace(
+            newContent,
             replacement: "* ",
             pattern: "<li>")
         newContent = self.replace(

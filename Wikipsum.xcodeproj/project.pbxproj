@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A53400B01A212A8200E2AA05 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A53400AF1A212A8200E2AA05 /* README.md */; };
+		A53400B21A212C2000E2AA05 /* LICENCE in Resources */ = {isa = PBXBuildFile; fileRef = A53400B11A212C2000E2AA05 /* LICENCE */; };
 		A5E9AEDB1A080E8400F0FBD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E9AEDA1A080E8400F0FBD1 /* AppDelegate.swift */; };
 		A5E9AEDD1A080E8400F0FBD1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5E9AEDC1A080E8400F0FBD1 /* Images.xcassets */; };
 		A5E9AEE01A080E8400F0FBD1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5E9AEDE1A080E8400F0FBD1 /* MainMenu.xib */; };
@@ -24,6 +26,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A53400AF1A212A8200E2AA05 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A53400B11A212C2000E2AA05 /* LICENCE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE; sourceTree = "<group>"; };
 		A5E9AED51A080E8400F0FBD1 /* Wikipsum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wikipsum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5E9AED91A080E8400F0FBD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5E9AEDA1A080E8400F0FBD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +59,8 @@
 		A5E9AECC1A080E8400F0FBD1 = {
 			isa = PBXGroup;
 			children = (
+				A53400B11A212C2000E2AA05 /* LICENCE */,
+				A53400AF1A212A8200E2AA05 /* README.md */,
 				A5E9AED71A080E8400F0FBD1 /* Wikipsum */,
 				A5E9AEE81A080E8400F0FBD1 /* WikipsumTests */,
 				A5E9AED61A080E8400F0FBD1 /* Products */,
@@ -186,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A53400B21A212C2000E2AA05 /* LICENCE in Resources */,
 				A5E9AEDD1A080E8400F0FBD1 /* Images.xcassets in Resources */,
 				A5E9AEE01A080E8400F0FBD1 /* MainMenu.xib in Resources */,
 			);
@@ -205,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A53400B01A212A8200E2AA05 /* README.md in Sources */,
 				A5E9AEDB1A080E8400F0FBD1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
