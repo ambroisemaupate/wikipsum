@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A53400B01A212A8200E2AA05 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A53400AF1A212A8200E2AA05 /* README.md */; };
 		A53400B21A212C2000E2AA05 /* LICENCE in Resources */ = {isa = PBXBuildFile; fileRef = A53400B11A212C2000E2AA05 /* LICENCE */; };
+		A581BFB61A2161D10099E259 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A581BFB51A2161D10099E259 /* icon.png */; };
 		A5E9AEDB1A080E8400F0FBD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E9AEDA1A080E8400F0FBD1 /* AppDelegate.swift */; };
 		A5E9AEDD1A080E8400F0FBD1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5E9AEDC1A080E8400F0FBD1 /* Images.xcassets */; };
 		A5E9AEE01A080E8400F0FBD1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5E9AEDE1A080E8400F0FBD1 /* MainMenu.xib */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		A53400AF1A212A8200E2AA05 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A53400B11A212C2000E2AA05 /* LICENCE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE; sourceTree = "<group>"; };
+		A581BFB51A2161D10099E259 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		A5E9AED51A080E8400F0FBD1 /* Wikipsum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wikipsum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5E9AED91A080E8400F0FBD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5E9AEDA1A080E8400F0FBD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 		A5E9AECC1A080E8400F0FBD1 = {
 			isa = PBXGroup;
 			children = (
+				A581BFB51A2161D10099E259 /* icon.png */,
 				A53400B11A212C2000E2AA05 /* LICENCE */,
 				A53400AF1A212A8200E2AA05 /* README.md */,
 				A5E9AED71A080E8400F0FBD1 /* Wikipsum */,
@@ -192,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A581BFB61A2161D10099E259 /* icon.png in Resources */,
 				A53400B21A212C2000E2AA05 /* LICENCE in Resources */,
 				A5E9AEDD1A080E8400F0FBD1 /* Images.xcassets in Resources */,
 				A5E9AEE01A080E8400F0FBD1 /* MainMenu.xib in Resources */,

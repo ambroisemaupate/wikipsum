@@ -1,3 +1,5 @@
+![Wikipsum](icon.png)
+
 # Wikipsum
 
 Wikipsum is a simple tool to get content from Wikipedia and convert it to Markdown to be
